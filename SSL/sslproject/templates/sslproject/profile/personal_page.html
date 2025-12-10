@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="" class=" js no-touch csstransitions" lang="en"><head>
+        <title>{{user.first_name}} {{user.last_name}}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta name="description" content="A theme for faculty profile page">
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3">
+
+        <link rel="shortcut icon" href="http://owwwlab.com/favicon.ico">
+
+        <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+        <!--CSS styles-->
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/font-awesome.css' %}">
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/perfect-scrollbar-0.css' %}">
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/style.css' %}">
+        <link id="theme-style" rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/default.css' %}">
+
+
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script async="" src="{% static 'sslproject/profile/personal_page_files/analytics.js' %}"></script><script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery-1.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/TweenMax.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery_005.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery_004.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/modernizr.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery_002.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery_003.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/ScrollToPlugin.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/bootstrap.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/jquery.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/masonry.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/perfect-scrollbar-0.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/magnific-popup.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/custom.js' %}"></script>
+
+        <!--/Javascript files-->
+
+
+        <!--Custom Styles for demo only-->
+        <link rel="stylesheet" href="{% static 'sslproject/profile/personal_page_files/custom-style.css' %}">
+        <script type="text/javascript" src="{% static 'sslproject/profile/personal_page_files/custom-style.js' %}"></script>
+        <!--/Custom Styles-->
+
+
+
+    </head>
+    <body class="vsc-initialized">
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
+
+            <div id="sidebar">
+                <div id="main-nav" class="ps-container">
+                    <div id="nav-container">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs" style="background-image:url({{user.employee.avatar.url}});"></div>
+                            <div class="title">
+                                <h2>{{user.first_name}} {{user.last_name}}</h2>
+                                <h3>{{user.employee.currentinstitute}}</h3>
+                            </div>
+
+                        </div>
+                        <ul id="navigation">
+                            <li class="">
+                              <a href="#biography">
+                                <div class="icon icon-user"></div>
+                                <div class="text">About Me</div>
+                              </a>
+                            </li>
+
+                            <li class="">
+                              <a href="#research">
+                                <div class="icon icon-book"></div>
+                                <div class="text">Projects</div>
+                              </a>
+                            </li>
+
+                            <li class="currentmenu">
+                              <a href="#publications">
+                                <div class="icon icon-edit"></div>
+                                <div class="text">Publications</div>
+                              </a>
+                            </li>
+
+                            <li class="">
+                              <a href="#teaching">
+                                <div class="icon icon-edit"></div>
+                                <div class="text">Teaching</div>
+                              </a>
+                            </li>
+
+
+
+                            <li>
+                              <a href="#contact">
+                                  <div class="icon icon-calendar"></div>
+                                  <div class="text">Contact &amp; Meet Me</div>
+                              </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: -296px; width: 250px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 299px; right: 3px; height: 306px;"><div class="ps-scrollbar-y" style="top: 152px; height: 154px;"></div></div></div>
+
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+
+                <div id="biography" class="page home" data-pos="home">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+
+                                <div class="row">
+                                    <div class="col-sm-2 visible-sm"></div>
+                                    <div class="col-sm-8 col-md-5">
+                                        <div class="biothumb">
+                                            <img alt="image" src="{{user.employee.avatar.url}}" class="img-responsive">
+                                          <!--   <div class="overlay">
+
+                                                
+                                            </div> -->
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="clearfix visible-sm visible-xs"></div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <h3 class="title">Dr . {{user.first_name}} {{user.last_name}}</h3>
+
+                                            <h1 class="">{{user.employee.designation}}</h1>
+                                        <ul class="list-unstyled">{{user.employee.department}}
+                                                </ul>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-1">
+
+
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="title text-center">
+                                            <h3>Education</h3>
+                                        </div>
+                                        <ul class="ul-card">
+                                            {% for edu in education %}
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">{{edu.degree}}</span>
+                                                    <span class="year">{{edu.year}}</span>
+                                                    <span class="year">{{edu.year}}</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">{{edu.degree}} in {{edu.department}}</p>
+                                                    <p class="where">{{edu.institute}}</p>
+                                                </div>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Honors, Awards and Grants</h3>
+                                        </div>
+                                        <ul class="timeline">
+                                            {% for achv in achievements %}
+                                            <li class="open">
+                                                <div class="date">{{achv.year}}</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">{{achv.ach}}</div>
+                                                    <div class="text row open" style="display: block;">
+                                                        <div class="col-md-2">
+                                                            <img alt="image" class="thumbnail img-responsive" src="{% static 'sslproject/profile/personal_page_files/Nobel_Prize.png' %}">
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            {{achv.details}}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            {% endfor %}                                    
+                                           
+                                            
+                                            
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="research" class="page" data-pos="p1" style="z-index: 0; left: 100%;">
+                    <div class="pageheader">
+
+                        <div class="headercontent">
+
+                            <div class="section-container">
+                                <h2 class="title">Research Projects</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="title text-center">
+                                    <h3>Research Projects</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="ul-withdetails">
+                                            {% for item in project %}
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="{% static 'sslproject/profile/personal_page_files/p3.jpg' %}" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon icon-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>{{item.title}}</h3>
+                                                            <p>click to view details.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    <p>Duration : {{item.duration}}</p>
+                                                    <p>Sponsor : {{item.sponser}}</p>
+                                                    <p>Role : {{item.role}}</p>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="publications" class="page currentpage" data-pos="p2" style="z-index: 500; left: 15%;">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+
+                                    <h2 class="title">Selected Publications</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>The follwing are the selected publications of prof {{user.first_name}} {{user.last_name}}</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+
+                         
+                            <div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                {% for pub in publications %}                                                                                                                                  
+                                                <div class="item mix cpaper mix_all" style="display: block;  opacity: 1;">
+                                                    <div class="pubmain">
+                                                        <!-- <div class="pubassets">                                                            
+
+                                                        </div> -->
+                                                        
+                                                        <div class="pubtitle" style="overflow-wrap:break-word; "><h4>{{pub.pub}}</h4></div>
+                                                        <div class="pubauthor"><strong>{{user.first_name}} {{user.last_name}}</strong></div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Papers</span>{{pub.where}}</div>
+
+                                                        </div>
+                                                   
+                                                </div>
+                                                {% endfor %}
+                                               
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="teaching" class="page" data-pos="p3" style="z-index: 2; left: 0px;" data-order="2">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+
+                                <h2 class="title">Teaching</h2>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>The following are the courses taken up by Prof. {{user.first_name}} {{user.last_name}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="title text-center">
+                                        <h3>Currrent Teaching</h3>
+                                    </div>
+                                    <ul class="ul-dates">
+                                        {% for teach in teaching %}
+                                        <li>
+                                            <div class = "col-md-2">
+                                            <div class="dates">
+                                                <span>{{teach.start_date}}</span>
+                                                <span>{{teach.end_date}}</span>
+                                            </div></div>
+                                            <div class = "col-md-10">
+                                            <div class="">
+                                                <h4>{{teach.course}}</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices ac elit sit amet
+porttitor. Suspendisse congue, erat vulputate pharetra mollis, est eros
+fermentum nibh, vitae rhoncus est arcu vitae elit.</p>
+                                            </div></div>
+                                        </li>
+
+                                        {% endfor %}
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+               
+
+                
+                <div id="contact" class="page stellar" data-pos="p1" style="z-index: 0; left: 100%;">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+
+                                <h2 class="title">Contact &amp; Meet Me</h2>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <strong><i class="icon-phone"></i>&nbsp;&nbsp;</strong>
+                                                <span>{{user.employee.mobileNo}}</span>
+                                            </li>
+
+
+                                            <li>
+                                                <strong><i class="icon-envelope"></i>&nbsp;&nbsp;</strong>
+                                                <span>{{user.email}}</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-skype"></i>&nbsp;&nbsp;</strong>
+                                                <span>{{user.first_name}}</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-twitter"></i>&nbsp;&nbsp;</strong>
+                                                <span>#{{user.first_name}}</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-linkedin-sign"></i>&nbsp;&nbsp;</strong>
+                                                <span><a href="#">us.linkedin.com/in/{{user.username}}</a></span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagecontents">
+                        <div class="section contact-office" data-stellar-background-ratio="0.1" style="background-position: 0% -508.05px;">
+
+                        </div>
+
+                        <div class="section contact-lab" data-stellar-background-ratio="0.1" style="background-position: 0% -1188.9px;">
+                            <div class="section-container">
+                                <div class="row">
+
+                                    <div class="col-md-8">
+                                        <h2 class="title">At My Lab</h2>
+                                        <p>You can find me at my office
+located at {{user.employee.currentinstitute}} </p>
+                                        <p>I am at my office every day from 7:00 until 10:00 am, but you may consider a call to fix an appointment.</p>
+                                    </div>
+                                    <div class="col-md-4 text-center hidden-xs hidden-sm">
+                                        <i class="icon-superscript icon-huge"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="overlay" style="display: block;"></div>
+
+            </div>
+        </div>
+<script src="{% static 'sslproject/profile/personal_page_files/email-decode.js' %}"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45653136-1', 'owwwlab.com');
+  ga('send', 'pageview');
+
+</script>
+    
+    </body></html>
