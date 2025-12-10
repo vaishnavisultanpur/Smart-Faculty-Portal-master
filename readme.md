@@ -70,7 +70,6 @@ Verify the deployment by navigating to your server address in your preferred bro
 ![user](/screenshots/user.png?raw=true "user")
 ![project](/screenshots/project.png?raw=true "project")
 ![teaching](/screenshots/teaching.png?raw=true "teaching")
-![scraper](/screenshots/scraper.png?raw=true "scraper")
 ![student1](/screenshots/student1.png?raw=true "student1")
 ![passwordchange](/screenshots/passwordchange.png?raw=true "passwordchange")
 
